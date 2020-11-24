@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutter_image/Screens/Pridiction.dart';
 
 import 'Screens/Home.dart';
 import 'Screens/Second_screen.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => Home(),
         '/second': (context) => SecondScreen(),
+        '/predict': (context) => Prediction()
       },
     );
   }

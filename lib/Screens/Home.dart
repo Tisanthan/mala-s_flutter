@@ -6,6 +6,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Quality Estimator"),
+      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -30,7 +33,7 @@ class Home extends StatelessWidget {
               color: Colors.blue,
               child: new Text('History',
                   style: new TextStyle(fontSize: 16.0, color: Colors.white)),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, '/predict'),
             ),
             const SizedBox(height: 30),
             MaterialButton(
